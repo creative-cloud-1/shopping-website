@@ -1,0 +1,453 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  background-image: url('b2/penc.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+.img h1{
+  margin: 12%;
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+}  
+
+.span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: black;
+  transform: translate(-50%, -50%);
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 40px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+@media screen and (max-height: 450px) {
+  .overlay {
+    width: 100%;
+    display: block;
+  }
+ 
+}
+
+/* The Overlay (background) */
+.log{
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 10); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+/* Position the content inside the overlay */
+.login-form {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s;
+}
+
+
+/* Position the close button (top right corner) */
+.log a {
+  position: absolute;
+  top: 20px;
+  text-decoration: none;
+  color: #818181;
+  right: 45px;
+  font-size: 60px;
+}
+
+.log a:hover, .log a:focus{
+  color: white;
+  cursor: pointer;
+} 
+
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .log {
+    width: 100%;
+    display: block;
+  }
+
+}
+
+.homecontent{
+  height: 100%;
+  width: 0;
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 10);
+  overflow-x: hidden;
+  transition: 0.5s;
+
+}
+
+.button{
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s;
+}
+.homecontent a {
+  position: absolute;
+  top: 20px;
+  text-decoration: none;
+  color: #818181;
+  right: 45px;
+  font-size: 60px;
+}
+
+#b1 {
+  position: relative;
+  top: 70px;
+  color: #818181;
+  right: 70px;
+  font-size: 60px;
+  border-radius: 20px;
+  outline: none;
+  padding: 10px;
+}
+
+#b2{
+  position: relative;
+  top:70px;
+  color: #818181;
+  left: 70px;
+  font-size: 60px;
+  border-radius: 20px;
+  outline: none;
+  padding: 10px;
+}
+.homecontent a:hover, .homecontent a:focus {
+  color: white;
+  cursor: pointer;
+}
+.homecontent #b1:hover, #b1:focus{
+  color:black;
+  cursor: pointer;
+}
+.homecontent #b2:hover, #b2:focus{
+  color:black;
+  cursor: pointer;
+}
+@media screen and (max-height: 450px) {
+  .button {
+    font-size: 5px;
+    display: inline-flex;
+  }
+  .homecontent a{
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.finding{
+  height: 100%;
+  width: 0;
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 10);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.srch {
+  position: relative;
+  top: 40%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s;
+}
+
+.text{
+  font-size: 30px;
+}
+.finding a {
+  position: absolute;
+  top: 20px;
+  text-decoration: none;
+  color: #818181;
+  right: 45px;
+  font-size: 60px;
+}
+.finding a:hover, .finding a:focus {
+  color: white;
+  cursor: pointer;
+}
+.srch :hover, .srch:focus{
+  color:black;
+  cursor: pointer;
+}
+@media screen and (max-height: 450px) {
+  .finding .text .submit {font-size: 20px}
+  .homecontent a{
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+  .contact{
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 10);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .details {
+    position: relative;
+    top: 10%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s;
+  }
+  .details h3{
+    font-size: 60px;
+  }
+  .details p{
+    margin: 50px ;
+  }
+  .contact a {
+    position: absolute;
+    top: 20px;
+    text-decoration: none;
+    color: #818181;
+    right: 45px;
+    font-size: 60px;
+  }
+  .contact a:hover, .contact a:focus {
+    color: white;
+    cursor: pointer;
+  }
+  .details :hover, .details:focus{
+    cursor: pointer;
+  
+  }
+  
+  @media screen and (max-height: 450px) {
+    .contact .details {font-size: 20px}
+    .contact a{
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  /* BLACK */
+  .blackcontent{
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 1;
+    right: 0;
+    top: 0;
+    background-color: rgb(253, 251, 251); 
+    background-color: rgba(252, 250, 250, 10);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .imgblack {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: rgb(14, 13, 13);
+    display: block; /* Display block instead of inline */
+    transition: 0.3s;
+  }
+.blackcontent a{
+  font-size: 60px;
+  position: relative;
+  color: #818181;
+  text-decoration: none;
+  top: 20px;
+  left: 45px;
+}
+
+  .blackcontent a:hover, .blackcontent a:focus {
+    color: black;
+    cursor: pointer;
+  }
+ 
+  .imgblack h2{
+    font-size: 125px;
+  }
+
+  .imgblack button{
+    font-size: 25px;
+    border-radius: 5px;
+    outline: none;
+    color: #818181;
+    text-align: center;
+    padding: 10px;
+  }
+  .imgblack button:hover, .imgblack a:focus {
+    color: black;
+    cursor: pointer;
+  }
+  @media screen and (max-height: 450px) {
+     .black {font-size: 20px}
+    .blackcontent a{
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+
+    /* white */
+
+  .whitecontent{
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 1;
+    right: 0;
+    top: 0;
+    background-color: rgb(12, 12, 12); 
+    background-color: rgba(5, 5, 5, 10);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .imgwhite {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: rgb(252, 248, 248);
+    display: block; /* Display block instead of inline */
+    transition: 0.3s;
+  }
+  .whitecontent a{
+    font-size: 60px;
+    position: relative;
+    color: #818181;
+    text-decoration: none;
+    top: 20px;
+    left: 45px;
+  }
+
+  .whitecontent a:hover, .whitecontent a:focus {
+    color: white;
+    cursor: pointer;
+  }
+  .imgwhite h2{
+    font-size: 125px;
+  }
+
+  .imgwhite button{
+    font-size: 25px;
+    border-radius: 5px;
+    outline: none;
+    color: #818181;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+  }
+  .imgwhite button:hover, .imgwhite a:focus {
+    color: black;
+    cursor: pointer;
+  }
+  @media screen and (max-height: 450px) {
+    .imgwhite {
+    display: block;
+  }
+    .whitecontent a{
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
