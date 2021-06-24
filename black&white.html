@@ -65,25 +65,64 @@
 
 
         <div id="home" class="homecontent">
-            <!-- Button to close the overlay navigation -->
+            <!-- Button to close home content list -->
             <a href="javascript:void(0)" class="closehome" onclick="closehome()">&times;</a>
+            <!-- created a list  -->
+            <div class="gender">
+                <a onclick="men()" href="#">Men</a><br>
+                <a onclick="women()" href="#"></i>Women</a>
+                <a onclick="kids()" href="#"></i>Kids</a>
+            </div>
+        </div>
+        <!-- after clicking on men opion it will ask for black and white option  -->
+
+        <div id="men" class="option">
+            <!-- Button to close black and white option -->
+            <a href="javascript:void(0)" class="closeoption1" onclick="closeoption1()">&times;</a>
 
             <!-- created two button -->
             <div class="button">
-                <button id="b1" class="link" onclick="openblack()">Black</button>
-                <button id="b2" class="link" onclick="openwhite()">White</button>
+                <button id="b1" class="link" onclick="blackmen()">Black</button>
+                <button id="b2" class="link" onclick="whitemen()">White</button>
             </div>
-
         </div>
 
+        <!-- after clicking on men opion it will ask for black and white option  -->
+
+        <div id="women" class="option">
+            <!-- Button to close black and white option -->
+            <a href="javascript:void(0)" class="closeoption2" onclick="closeoption2()">&times;</a>
+
+            <!-- created two button -->
+            <div class="button">
+                <button id="b1" class="link" onclick="blackwomen()">Black</button>
+                <button id="b2" class="link" onclick="whitewomen()">White</button>
+            </div>
+        </div>
+
+        <!-- after clicking on men opion it will ask for black and white option  -->
+
+        <div id="kids" class="option">
+            <!-- Button to close black and white option -->
+            <a href="javascript:void(0)" class="closeoption3" onclick="closeoption3()">&times;</a>
+
+            <!-- created two button -->
+            <div class="button">
+                <button id="b1" class="link" onclick="blackkids()">Black</button>
+                <button id="b2" class="link" onclick="whitekids()">White</button>
+            </div>
+        </div>
+
+        <!-- search button -->
 
         <div id="find" class="finding">
-            <!-- Button to close the overlay navigation -->
+            <!-- Button to close the search button -->
             <a href="javascript:void(0)" class="closeing" onclick="closesearch()">&times;</a>
 
             <div class="srch">
                 <input type="text" placeholder="Search.." name="search" style="font-size: 50px; outline: none;  ">
-                <button type="submit" onclick="search()"><i class="fa fa-search" style="font-size: 50px; outline: none;"></i></button>
+                <button type="submit" onclick="search()"><i class="fa fa-search"
+                        style="font-size: 50px; outline: none;"></i></button>
 
 
 
@@ -91,15 +130,16 @@
         </div>
 
 
+        <!-- contact button -->
 
         <div id="detail" class="contact">
-            <!-- Button to close the overlay navigation -->
+            <!-- Button to close the contact detaisl -->
             <a href="javascript:void(0)" class="closeing" onclick="closecontact()">&times;</a>
 
 
             <div class="details">
                 <h3><u>CONTACT</u> </h3><br>
-                
+
                 <p>Phone no.- 0123456789</p>
                 <p>Mail ID - CreativeCloud@gmail.com</p>
 
@@ -107,60 +147,18 @@
 
         </div>
     </section>
-
+    <!-- black clothes for men  -->
     <article>
-        <div id="black" class="blackcontent">
+        <div id="blackmen" class="blackcontent">
             <!-- Button to close  -->
-            <a href="javascript:void(0)" class="closeing" onclick="closeblack()">&times;</a>
+            <a href="javascript:void(0)" class="closebmen" onclick="closebmen()">&times;</a>
 
             <div class="black">
                 <div class="imgblack">
                     <h2><u>Black</u></h2>
                     <hr>
                     <br>
-                    <img src="b2/blk6.jpg" alt="" style="width:50%;">
-                    <h3>Black T-shirt</h3>
-                    <p class="price">$10.99</p>
-                    <button type="button" onclick="add()">Add to cart</button>
-                    <button onclick="buy()">Buy</button><br><br>
-
-                    <img src="b2/b1.jpg" alt="" style="width:50%;">
-                    <h3>Black T-shirt</h3>
-                    <p class="price">$10.99</p>
-                    <button type="button" onclick="add()">Add to cart</button>
-                    <button onclick="buy()">Buy</button><br><br>
-
-                    <img src="b2/b3.jpg" alt="" style="width:50%;">
-                    <h3>Black T-shirt</h3>
-                    <p class="price">$10.99</p>
-                    <button type="button" onclick="add()">Add to cart</button>
-                    <button onclick="buy()">Buy</button><br><br>
-
-                    <img src="b2/clt.jpg" alt="" style="width:50%;">
-                    <h3>Black T-shirt</h3>
-                    <p class="price">$10.99</p>
-                    <button type="button" onclick="add()">Add to cart</button>
-                    <button onclick="buy()">Buy</button><br><br>
-
-                    <img src="b2/b2.jpg" alt="" style="width:50%;">
-                    <h3>Black T-shirt</h3>
-                    <p class="price">$10.99</p>
-                    <button type="button" onclick="add()">Add to cart</button>
-                    <button onclick="buy()">Buy</button><br><br>
-
-                    <img src="b2/babyblack.jpg" alt="" style="width:50%;">
-                    <h3>Black T-shirt</h3>
-                    <p class="price">$10.99</p>
-                    <button type="button" onclick="add()">Add to cart</button>
-                    <button onclick="buy()">Buy</button><br><br>
-
-                    <img src="b2/blkwhat.jpg" alt="" style="width:50%;">
-                    <h3>Black T-shirt</h3>
-                    <p class="price">$10.99</p>
-                    <button type="button" onclick="add()">Add to cart</button>
-                    <button onclick="buy()">Buy</button><br><br>
-
-                    <img src="b2/bbyblk.jpg" alt="" style="width:50%;">
+                    <img src="b2/black1.jpg" alt="" style="width:50%;">
                     <h3>Black T-shirt</h3>
                     <p class="price">$10.99</p>
                     <button type="button" onclick="add()">Add to cart</button>
@@ -172,19 +170,65 @@
                     <button type="button" onclick="add()">Add to cart</button>
                     <button onclick="buy()">Buy</button><br><br>
 
-                    <img src="b2/black.jpg" alt="" style="width:50%;">
+                    <img src="b2/black7.jpg" alt="" style="width:50%;">
                     <h3>Black T-shirt</h3>
                     <p class="price">$10.99</p>
                     <button type="button" onclick="add()">Add to cart</button>
                     <button onclick="buy()">Buy</button><br><br>
 
-                    <img src="b2/black1.jpg" alt="" style="width:50%;">
+                    <img src="b2/black8.jpg" alt="" style="width:50%;">
                     <h3>Black T-shirt</h3>
                     <p class="price">$10.99</p>
                     <button type="button" onclick="add()">Add to cart</button>
                     <button onclick="buy()">Buy</button><br><br>
 
-                    <img src="b2/black10.jpg" alt="" style="width:50%;">
+                    <img src="b2/blk9b.jpg" alt="" style="width:50%;">
+                    <h3>Black T-shirt</h3>
+                    <p class="price">$10.99</p>
+                    <button type="button" onclick="add()">Add to cart</button>
+                    <button onclick="buy()">Buy</button><br><br>
+
+                    <img src="b2/blkmike.jpg" alt="" style="width:50%;">
+                    <h3>Black T-shirt</h3>
+                    <p class="price">$10.99</p>
+                    <button type="button" onclick="add()">Add to cart</button>
+                    <button onclick="buy()">Buy</button><br><br>
+
+                    <img src="b2/b3.jpg" alt="" style="width:50%;">
+                    <h3>Black T-shirt</h3>
+                    <p class="price">$10.99</p>
+                    <button type="button" onclick="add()">Add to cart</button>
+                    <button onclick="buy()">Buy</button><br><br>
+
+                    <img src="b2/bbkk.jpg" alt="" style="width:50%;">
+                    <h3>Black T-shirt</h3>
+                    <p class="price">$10.99</p>
+                    <button type="button" onclick="add()">Add to cart</button>
+                    <button onclick="buy()">Buy</button><br><br>
+
+                    <img src="b2/bl4.jpg" alt="" style="width:50%;">
+                    <h3>Black T-shirt</h3>
+                    <p class="price">$10.99</p>
+                    <button type="button" onclick="add()">Add to cart</button>
+                    <button onclick="buy()">Buy</button><br><br>
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- black clothes for women  -->
+    <article>
+        <div id="blackwomen" class="blackcontent">
+            <!-- Button to close  -->
+            <a href="javascript:void(0)" class="closebwomen" onclick="closebwomen()">&times;</a>
+
+            <div class="black">
+                <div class="imgblack">
+                    <h2><u>Black</u></h2>
+                    <hr>
+                    <br>
+                    <img src="b2/black6.jpg" alt="" style="width:50%;">
                     <h3>Black T-shirt</h3>
                     <p class="price">$10.99</p>
                     <button type="button" onclick="add()">Add to cart</button>
@@ -202,49 +246,7 @@
                     <button type="button" onclick="add()">Add to cart</button>
                     <button onclick="buy()">Buy</button><br><br>
 
-                    <img src="b2/black6.jpg" alt="" style="width:50%;">
-                    <h3>Black T-shirt</h3>
-                    <p class="price">$10.99</p>
-                    <button type="button" onclick="add()">Add to cart</button>
-                    <button onclick="buy()">Buy</button><br><br>
-
-                    <img src="b2/black7.jpg" alt="" style="width:50%;">
-                    <h3>Black T-shirt</h3>
-                    <p class="price">$10.99</p>
-                    <button type="button" onclick="add()">Add to cart</button>
-                    <button onclick="buy()">Buy</button><br><br>
-
-                    <img src="b2/blhrt.jpg" alt="" style="width:50%;">
-                    <h3>Black T-shirt</h3>
-                    <p class="price">$10.99</p>
-                    <button type="button" onclick="add()">Add to cart</button>
-                    <button onclick="buy()">Buy</button><br><br>
-
-                    <img src="b2/black8.jpg" alt="" style="width:50%;">
-                    <h3>Black T-shirt</h3>
-                    <p class="price">$10.99</p>
-                    <button type="button" onclick="add()">Add to cart</button>
-                    <button onclick="buy()">Buy</button><br><br>
-
-                    <img src="b2/bbkk.jpg" alt="" style="width:50%;">
-                    <h3>Black T-shirt</h3>
-                    <p class="price">$10.99</p>
-                    <button type="button" onclick="add()">Add to cart</button>
-                    <button onclick="buy()">Buy</button><br><br>
-
                     <img src="b2/bkg.jpg" alt="" style="width:50%;">
-                    <h3>Black T-shirt</h3>
-                    <p class="price">$10.99</p>
-                    <button type="button" onclick="add()">Add to cart</button>
-                    <button onclick="buy()">Buy</button><br><br>
-
-                    <img src="b2/blk5.jpg" alt="" style="width:50%;">
-                    <h3>Black T-shirt</h3>
-                    <p class="price">$10.99</p>
-                    <button type="button" onclick="add()">Add to cart</button>
-                    <button onclick="buy()">Buy</button><br><br>
-
-                    <img src="b2/blk3.jpg" alt="" style="width:50%;">
                     <h3>Black T-shirt</h3>
                     <p class="price">$10.99</p>
                     <button type="button" onclick="add()">Add to cart</button>
@@ -256,374 +258,245 @@
                     <button type="button" onclick="add()">Add to cart</button>
                     <button onclick="buy()">Buy</button><br><br>
 
-                    <img src="b2/blk9b.jpg" alt="" style="width:50%;">
+                    <img src="b2/blg.jpg" alt="" style="width:50%;">
                     <h3>Black T-shirt</h3>
                     <p class="price">$10.99</p>
                     <button type="button" onclick="add()">Add to cart</button>
                     <button onclick="buy()">Buy</button><br><br>
 
-                    <img src="b2/blkblue.jpg" alt="" style="width:50%;">
-                    <h3>Black T-shirt</h3>
-                    <p class="price">$10.99</p>
-                    <button type="button" onclick="add()">Add to cart</button>
-                    <button onclick="buy()">Buy</button><br><br>
 
-                    <img src="b2/blkmike.jpg" alt="" style="width:50%;">
-                    <h3>Black T-shirt</h3>
-                    <p class="price">$10.99</p>
-                    <button type="button" onclick="add()">Add to cart</button>
-                    <button onclick="buy()">Buy</button><br><br>
-
-                    <img src="b2/blkjkt.jpg" alt="" style="width:50%;">
-                    <h3>Black T-shirt</h3>
-                    <p class="price">$10.99</p>
-                    <button type="button" onclick="add()">Add to cart</button>
-                    <button onclick="buy()">Buy</button><br><br>
-
-                    <img src="b2/blklk.jpg" alt="" style="width:50%;">
-                    <h3>Black T-shirt</h3>
-                    <p class="price">$10.99</p>
-                    <button type="button" onclick="add()">Add to cart</button>
-                    <button onclick="buy()">Buy</button><br><br>
-
-                    <img src="b2/fullblk.jpg" alt="" style="width:50%;">
-                    <h3>Black T-shirt</h3>
-                    <p class="price">$10.99</p>
-                    <button type="button" onclick="add()">Add to cart</button>
-                    <button onclick="buy()">Buy</button><br><br>
-
-                    <img src="b2/bl4.jpg" alt="" style="width:50%;">
-                    <h3>Black T-shirt</h3>
-                    <p class="price">$10.99</p>
-                    <button type="button" onclick="add()">Add to cart</button>
-                    <button onclick="buy()">Buy</button><br><br>
-
-                    <img src="b2/pinkblack.jpg" alt="" style="width:50%;">
-                    <h3>Black T-shirt</h3>
-                    <p class="price">$10.99</p>
-                    <button type="button" onclick="add()">Add to cart</button>
-                    <button onclick="buy()">Buy</button><br><br>
-
-                    <img src="b2/tblk.jpg" alt="" style="width:50%;">
-                    <h3>Black T-shirt</h3>
-                    <p class="price">$10.99</p>
-                    <button type="button" onclick="add()">Add to cart</button>
-                    <button onclick="buy()">Buy</button><br><br>
-
-                    <img src="b2/flblk.jpg" alt="" style="width:50%;">
-                    <h3>Black T-shirt</h3>
-                    <p class="price">$10.99</p>
-                    <button type="button" onclick="add()">Add to cart</button>
-                    <button onclick="buy()">Buy</button><br><br>
-
-                    <img src="b2/blk8g.jpg" alt="" style="width:50%;">
-                    <h3>Black T-shirt</h3>
-                    <p class="price">$10.99</p>
-                    <button type="button" onclick="add()">Add to cart</button>
-                    <button onclick="buy()">Buy</button><br><br>
-
-                    <img src="b2/blk7.jpg" alt="" style="width:50%;">
-                    <h3>Black T-shirt</h3>
-                    <p class="price">$10.99</p>
-                    <button type="button" onclick="add()">Add to cart</button>
-                    <button onclick="buy()">Buy</button><br><br>
-
-                    <img src="b2/blk5.jpg" alt="" style="width:50%;">
-                    <h3>Black T-shirt</h3>
-                    <p class="price">$10.99</p>
-                    <button type="button" onclick="add()">Add to cart</button>
-                    <button onclick="buy()">Buy</button><br><br>
-
-                    <img src="b2/blk3.jpg" alt="" style="width:50%;">
-                    <h3>Black T-shirt</h3>
-                    <p class="price">$10.99</p>
-                    <button type="button" onclick="add()">Add to cart</button>
-                    <button onclick="buy()">Buy</button><br><br>
-
-                    <img src="b2/blk6.jpg" alt="" style="width:50%;">
-                    <h3>Black T-shirt</h3>
-                    <p class="price">$10.99</p>
-                    <button type="button" onclick="add()">Add to cart</button>
-                    <button onclick="buy()">Buy</button><br><br>
-
-                    <img src="b2/fullblk2.jpg" alt="" style="width:50%;">
-                    <h3>Black T-shirt</h3>
-                    <p class="price">$10.99</p>
-                    <button type="button" onclick="add()">Add to cart</button>
-                    <button onclick="buy()">Buy</button><br><br>
-
-                    <img src="b2/fullblk.jpg" alt="" style="width:50%;">
-                    <h3>Black T-shirt</h3>
-                    <p class="price">$10.99</p>
-                    <button type="button" onclick="add()">Add to cart</button>
-                    <button onclick="buy()">Buy</button><br><br>
-                    
-                    
-                    
-                    
                 </div>
             </div>
-            
         </div>
     </article>
 
-        <article>
+    <!-- black clothes for men  -->
 
-            <div id="white" class="whitecontent">
-                <!-- Button to close  -->
-                <a href="javascript:void(0)" class="closeing" onclick="closewhite()">&times;</a>
+    <article>
+        <div id="blackkids" class="blackcontent">
+            <!-- Button to close  -->
+            <a href="javascript:void(0)" class="closebkids" onclick="closebkids()">&times;</a>
 
-                <div class="white">
+            <div class="black">
+                <div class="imgblack">
+                    <h2><u>Black</u></h2>
+                    <hr>
+                    <br>
+                    <img src="b2/bbyblk.jpg" alt="" style="width:50%;">
+                    <h3>Black T-shirt</h3>
+                    <p class="price">$10.99</p>
+                    <button type="button" onclick="add()">Add to cart</button>
+                    <button onclick="buy()">Buy</button><br><br>
 
-                    <div class="imgwhite">
+                    <img src="b2/blhrt.jpg" alt="" style="width:50%;">
+                    <h3>Black T-shirt</h3>
+                    <p class="price">$10.99</p>
+                    <button type="button" onclick="add()">Add to cart</button>
+                    <button onclick="buy()">Buy</button><br><br>
 
-                        <h2><u> White</u></h2>
-                        <hr><br>
+                    <img src="b2/babyblack.jpg" alt="" style="width:50%;">
+                    <h3>Black T-shirt</h3>
+                    <p class="price">$10.99</p>
+                    <button type="button" onclick="add()">Add to cart</button>
+                    <button onclick="buy()">Buy</button><br><br>
 
-                        <img src="b2/whit.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+                    <img src="b2/black10.jpg" alt="" style="width:50%;">
+                    <h3>Black T-shirt</h3>
+                    <p class="price">$10.99</p>
+                    <button type="button" onclick="add()">Add to cart</button>
+                    <button onclick="buy()">Buy</button><br><br>
 
-                        <img src="b2/w5.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
 
-                        <img src="b2/w3.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
 
-                        <img src="b2/w4.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+                </div>
 
-                        <img src="b2/bluewhite.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+            </div>
+    </article>
+    <article>
 
-                        <img src="b2/w1.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+        <div id="whitemen" class="whitecontent">
+            <!-- Button to close  -->
+            <a href="javascript:void(0)" class="closemen" onclick="closemen()">&times;</a>
 
-                        <img src="b2/w7.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+            <div class="white">
 
-                        <img src="b2/w6.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+                <div class="imgwhite">
 
-                        <img src="b2/whitehulk.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+                    <h2><u> White</u></h2>
+                    <hr><br>
 
-                        <img src="b2/w9.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+                    <img src="b2/whitegn.jpg" alt="white">
+                    <h3>White T-shirt</h3>
+                    <p class="price">$10</p>
+                    <button type="button" onclick="add()">Add to cart</button>
+                    <button onclick="buy()">Buy</button><br><br>
 
-                        <img src="b2/whightngt.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+                    <img src="b2/white5.jpg" alt="white">
+                    <h3>White T-shirt</h3>
+                    <p class="price">$10</p>
+                    <button type="button" onclick="add()">Add to cart</button>
+                    <button onclick="buy()">Buy</button><br><br>
 
-                        <img src="b2/white2.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+                    <img src="b2/white6.jpg" alt="white">
+                    <h3>White T-shirt</h3>
+                    <p class="price">$10</p>
+                    <button type="button" onclick="add()">Add to cart</button>
+                    <button onclick="buy()">Buy</button><br><br>
 
-                        <img src="b2/white3.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+                    <img src="b2/w5.jpg" alt="white">
+                    <h3>White T-shirt</h3>
+                    <p class="price">$10</p>
+                    <button type="button" onclick="add()">Add to cart</button>
+                    <button onclick="buy()">Buy</button><br><br>
 
-                        <img src="b2/white4.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+                    <img src="b2/w9.jpg" alt="white">
+                    <h3>White T-shirt</h3>
+                    <p class="price">$10</p>
+                    <button type="button" onclick="add()">Add to cart</button>
+                    <button onclick="buy()">Buy</button><br><br>
 
-                        <img src="b2/white5.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
 
-                        <img src="b2/white6.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+                    <img src="b2/whitegrw.jpg" alt="white">
+                    <h3>White T-shirt</h3>
+                    <p class="price">$10</p>
+                    <button type="button" onclick="add()">Add to cart</button>
+                    <button onclick="buy()">Buy</button><br><br>
 
-                        <img src="b2/white7.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+                    <img src="b2/w8.jpg" alt="white">
+                    <h3>White T-shirt</h3>
+                    <p class="price">$10</p>
+                    <button type="button" onclick="add()">Add to cart</button>
+                    <button onclick="buy()">Buy</button><br><br>
 
-                        <img src="b2/whitebg.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+                    <img src="b2/whitehulk.jpg" alt="white">
+                    <h3>White T-shirt</h3>
+                    <p class="price">$10</p>
+                    <button type="button" onclick="add()">Add to cart</button>
+                    <button onclick="buy()">Buy</button><br><br>
 
-                        <img src="b2/whiteblue.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+                    <img src="b2/whitebrwn.jpg" alt="white">
+                    <h3>White T-shirt</h3>
+                    <p class="price">$10</p>
+                    <button type="button" onclick="add()">Add to cart</button>
+                    <button onclick="buy()">Buy</button><br><br>
+                </div>
+            </div>
+        </div>
 
-                        <img src="b2/whitebo.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+    </article>
+    <!-- for white women -->
+    <article>
+        <div id="whitewomen" class="whitecontent">
+            <!-- Button to close  -->
+            <a href="javascript:void(0)" class="closewomen" onclick="closewomen()">&times;</a>
 
-                        <img src="b2/whitebrsh.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
 
-                        <img src="b2/whitebrwn.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+            <div class="white">
 
-                        <img src="b2/whiteby.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+                <div class="imgwhite">
+                    <h2><u>White</u></h2>
+                    <hr>
+                    <br>
+                    <img src="b2/w4.jpg" alt="white">
+                    <h3>White T-shirt</h3>
+                    <p class="price">$10</p>
+                    <button type="button" onclick="add()">Add to cart</button>
+                    <button onclick="buy()">Buy</button><br><br>
 
-                        <img src="b2/whiteczr.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+                    <img src="b2/whitehere.jpg" alt="white">
+                    <h3>White T-shirt</h3>
+                    <p class="price">$10</p>
+                    <button type="button" onclick="add()">Add to cart</button>
+                    <button onclick="buy()">Buy</button><br><br>
 
-                        <img src="b2/whitefg.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+                    <img src="b2/whightngt.jpg" alt="white">
+                    <h3>White T-shirt</h3>
+                    <p class="price">$10</p>
+                    <button type="button" onclick="add()">Add to cart</button>
+                    <button onclick="buy()">Buy</button><br><br>
 
-                        <img src="b2/whitefight,jpg.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+                    <img src="b2/whiteblue.jpg" alt="white">
+                    <h3>White T-shirt</h3>
+                    <p class="price">$10</p>
+                    <button type="button" onclick="add()">Add to cart</button>
+                    <button onclick="buy()">Buy</button><br><br>
 
-                        <img src="b2/whiteg.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+                    <img src="b2/whiteg.jpg" alt="white">
+                    <h3>White T-shirt</h3>
+                    <p class="price">$10</p>
+                    <button type="button" onclick="add()">Add to cart</button>
+                    <button onclick="buy()">Buy</button><br><br>
 
-                        <img src="b2/whitegn.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+                    <img src="b2/whitenight.jpg" alt="white">
+                    <h3>White T-shirt</h3>
+                    <p class="price">$10</p>
+                    <button type="button" onclick="add()">Add to cart</button>
+                    <button onclick="buy()">Buy</button><br><br>
 
-                        <img src="b2/whitehere.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+                    <img src="b2/whitepk.jpg" alt="white">
+                    <h3>White T-shirt</h3>
+                    <p class="price">$10</p>
+                    <button type="button" onclick="add()">Add to cart</button>
+                    <button onclick="buy()">Buy</button><br><br>
 
-                        <img src="b2/w8.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+                    <img src="b2/wht2.jpg" alt="white">
+                    <h3>White T-shirt</h3>
+                    <p class="price">$10</p>
+                    <button type="button" onclick="add()">Add to cart</button>
+                    <button onclick="buy()">Buy</button><br><br>
 
-                        <img src="b2/whitejkt.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+                    <img src="b2/whiteylw.jpg" alt="white">
+                    <h3>White T-shirt</h3>
+                    <p class="price">$10</p>
+                    <button type="button" onclick="add()">Add to cart</button>
+                    <button onclick="buy()">Buy</button><br><br>
 
-                        <img src="b2/whiteking.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+                    <img src="b2/whtylw.jpg" alt="white">
+                    <h3>White T-shirt</h3>
+                    <p class="price">$10</p>
+                    <button type="button" onclick="add()">Add to cart</button>
+                    <button onclick="buy()">Buy</button><br><br>
+                </div>
+            </div>
+    </article>
 
-                        <img src="b2/whitenight.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+    <!-- for white kids -->
+    <article>
+        <div id="whitekids" class="whitecontent">
+            <!-- Button to close  -->
+            <a href="javascript:void(0)" class="closekids" onclick="closekids()">&times;</a>
 
-                        <img src="b2/whitepk.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
 
-                        <img src="b2/whitered.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+            <div class="white">
+                <div class="imgwhite">
 
-                        <img src="b2/whitered2.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+                    <h2><u>White</u></h2>
+                    <hr>
+                    <br>
 
-                        <img src="b2/whitewtr.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+                    <img src="b2/w3.jpg" alt="white">
+                    <h3>White T-shirt</h3>
+                    <p class="price">$10</p>
+                    <button type="button" onclick="add()">Add to cart</button>
+                    <button onclick="buy()">Buy</button><br><br>
 
-                        <img src="b2/wht2.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
+                    <img src="b2/white3.jpg" alt="white">
+                    <h3>White T-shirt</h3>
+                    <p class="price">$10</p>
+                    <button type="button" onclick="add()">Add to cart</button>
+                    <button onclick="buy()">Buy</button><br><br>
 
-                        <img src="b2/whtwht.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
 
-                        <img src="b2/whtylw.jpg" alt="white">
-                        <h3>White T-shirt</h3>
-                        <p class="price">$10</p>
-                        <button type="button" onclick="add()">Add to cart</button>
-                        <button onclick="buy()">Buy</button><br><br>
-                    </div>buy()
                 </div>
             </div>
 
-        </article>
+        </div>
+
+
+
+
+    </article>
+
 
 
 </body>

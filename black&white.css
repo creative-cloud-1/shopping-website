@@ -125,8 +125,58 @@ body {
   }
 
 }
+/* for men, women,kids list */
 
-.homecontent{
+.homecontent {
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 10); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s;
+}
+
+.gender {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.homecontent a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 50px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.homecontent a:hover, .homecontent a:focus {
+  color: #f1f1f1;
+}
+
+.homecontent .closehome {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+@media screen and (max-height: 450px) {
+  .homecontent {
+    width: 100%;
+    display: block;
+  }
+ 
+}
+
+/* for black and white option */
+.option{
   height: 100%;
   width: 0;
   position: fixed; 
@@ -137,9 +187,7 @@ body {
   background-color: rgba(0,0,0, 10);
   overflow-x: hidden;
   transition: 0.5s;
-
 }
-
 .button{
   position: relative;
   top: 25%; /* 25% from the top */
@@ -153,7 +201,7 @@ body {
   display: block; /* Display block instead of inline */
   transition: 0.3s;
 }
-.homecontent a {
+.option a {
   position: absolute;
   top: 20px;
   text-decoration: none;
@@ -183,16 +231,17 @@ body {
   outline: none;
   padding: 10px;
 }
-.homecontent a:hover, .homecontent a:focus {
+
+.option #b1:hover, #b1:focus{
+  color:black;
+  cursor: pointer;
+}
+.option #b2:hover, #b2:focus{
+  color:black;
+  cursor: pointer;
+}
+.option a:hover, a:focus{
   color: white;
-  cursor: pointer;
-}
-.homecontent #b1:hover, #b1:focus{
-  color:black;
-  cursor: pointer;
-}
-.homecontent #b2:hover, #b2:focus{
-  color:black;
   cursor: pointer;
 }
 @media screen and (max-height: 450px) {
@@ -200,7 +249,7 @@ body {
     font-size: 5px;
     display: inline-flex;
   }
-  .homecontent a{
+  .option a{
     font-size: 40px;
     top: 15px;
     right: 35px;
